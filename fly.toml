@@ -1,0 +1,14 @@
+# fly.toml app configuration file generated for fe-django-tasks on 2023-06-18T23:50:47-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "fe-django-tasks"
+primary_region = "lax"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
